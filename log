@@ -120,3 +120,17 @@ arraylist.c:25:7: error: assignment to ‘ArrayList *’ {aka ‘struct ArrayLis
 cc1: all warnings being treated as errors
 Compilation failed
 cf25521
+Thu 30 Mar 2023 04:09:36 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:25:21: error: initialization of ‘ArrayList *’ {aka ‘struct ArrayList *’} from incompatible pointer type ‘ArrayList **’ {aka ‘struct ArrayList **’} [-Werror=incompatible-pointer-types]
+   25 |     ArrayList * l = (ArrayList **) realloc(l->data, sizeof(void*) * l->capacity * 2);
+      |                     ^
+arraylist.c:25:70: error: ‘l’ may be used uninitialized [-Werror=maybe-uninitialized]
+   25 |     ArrayList * l = (ArrayList **) realloc(l->data, sizeof(void*) * l->capacity * 2);
+      |                                                                     ~^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+83e9c1d
