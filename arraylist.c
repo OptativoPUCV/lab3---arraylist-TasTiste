@@ -11,9 +11,9 @@ typedef struct ArrayList {
 } ArrayList;
 
 ArrayList *createList(void) {
-  ArrayList * auxList = (ArrayList *)malloc(sizeof(auxList));
+  ArrayList * auxList = (ArrayList *)malloc(sizeof(ArrayList));
   if(auxList == NULL) return EXIT_FAILURE;
-    return NULL;
+    return auxList;
 }
 
 void append(ArrayList * l, void * data){
