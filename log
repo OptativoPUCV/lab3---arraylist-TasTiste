@@ -92,3 +92,9 @@ arraylist.c:23:11: error: assignment to ‘int’ from ‘void *’ makes intege
 cc1: all warnings being treated as errors
 Compilation failed
 4210289
+Thu 30 Mar 2023 04:03:59 PM UTC: 
+ arraylist.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  2|5
+total_score: 15/70
+c6b3b60
