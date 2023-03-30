@@ -98,3 +98,14 @@ Thu 30 Mar 2023 04:03:59 PM UTC:
  tests:  2|5
 total_score: 15/70
 c6b3b60
+Thu 30 Mar 2023 04:09:12 PM UTC: 
+ arraylist.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:25:13: error: assignment to ‘void **’ from incompatible pointer type ‘ArrayList **’ {aka ‘struct ArrayList **’} [-Werror=incompatible-pointer-types]
+   25 |     l->data = (ArrayList **) realloc(l->data, sizeof(void*) * l->capacity * 2);
+      |             ^
+cc1: all warnings being treated as errors
+Compilation failed
+311a55e
