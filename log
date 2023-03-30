@@ -45,3 +45,15 @@ arraylist.c:17:12: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 45e446d
+Thu 30 Mar 2023 03:53:42 PM UTC: 
+ arraylist.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:15:3: error: ‘listAux’ undeclared (first use in this function); did you mean ‘linux’?
+   15 |   listAux->data = (void **)malloc(sizeof(void *));
+      |   ^~~~~~~
+      |   linux
+arraylist.c:15:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+13a837a

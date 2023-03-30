@@ -12,10 +12,10 @@ typedef struct ArrayList {
 
 ArrayList *createList(void) {
   ArrayList * auxList = (ArrayList *)malloc(sizeof(ArrayList));
-  if(auxList == NULL) 
-  {
-    return EXIT_FAILURE;
-  }
+  listAux->data = (void **)malloc(sizeof(void *));
+  listAux->capacity = 2;
+  listAux->size = 0;
+  
   return auxList;
 }
 
