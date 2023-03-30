@@ -12,8 +12,11 @@ typedef struct ArrayList {
 
 ArrayList *createList(void) {
   ArrayList * auxList = (ArrayList *)malloc(sizeof(ArrayList));
-  if(auxList == NULL) return EXIT_FAILURE;
-    return auxList;
+  if(auxList == NULL) 
+  {
+    return EXIT_FAILURE;
+  }
+  return auxList;
 }
 
 void append(ArrayList * l, void * data){
