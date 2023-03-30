@@ -12,3 +12,14 @@ Thu 30 Mar 2023 03:42:38 PM UTC:
  tests:  0|6
 total_score: 0/70
 0a21424
+Thu 30 Mar 2023 03:45:40 PM UTC: 
+ arraylist.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:15:30: error: returning ‘int’ from a function with return type ‘ArrayList *’ {aka ‘struct ArrayList *’} makes pointer from integer without a cast [-Werror=int-conversion]
+   15 |   if(auxList == NULL) return EXIT_FAILURE;
+      |                              ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+850e2c1
